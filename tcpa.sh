@@ -5,8 +5,7 @@ PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin:$HOME/bin:/usr/local/bin:/usr/bin
 export PATH
 export LANG=en_US.UTF-8
 
-yum -y install epel-release
-yum -y install net-tools
+yum -y install epel-release net-tools bzip2
 
 curl -o /tmp/tcpa_packets_180619_1151.tar.bz2 https://raw.githubusercontent.com/ivmm/TCPA/master/tcpa_packets_180619_1151.tar.bz2
 chmod +x /etc/rc.d/rc.local
